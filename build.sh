@@ -1,11 +1,12 @@
 docker run --rm -it \
     -v $(pwd)/LoadscreenMute:/app/LoadscreenMute \
     -v $(pwd)/Dependencies:/tmp/Dependencies \
-    -v $(pwd)/Outputs:/tmp/outputs \
-    $(docker build -q .) \
+    -v $(pwd)/Outputs:/app/Outputs \
+    $(docker build -q --target build .devcontainer) \
         /bin/bash -c '\
-            mkdir /tmp/build && 
-            cd /tmp/build && 
+            mkdir /tmp/Build && 
+            mkdir /tmp/Outputs &&
+            cd /tmp/Build && 
             cp -r /app/LoadscreenMute/* . &&
-            dotnet build -o bin &&
-            cp bin/LoadscreenMute.dll /tmp/outputs'
+            dotnet build &&
+            cp /tmp/Outputs/LoadscreenMute.dll /app/Outputs'

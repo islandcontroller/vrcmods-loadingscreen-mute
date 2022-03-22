@@ -5,6 +5,7 @@
     <TargetFramework>net4.7.2</TargetFramework>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
+    <OutDir>../Outputs</OutDir>
   </PropertyGroup>
 
   <PropertyGroup>
