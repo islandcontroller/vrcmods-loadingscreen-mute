@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net4.7.2</TargetFramework>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyTitle>Loadscreen Mute Mod</AssemblyTitle>
+    <Description>VRChat Mod to mute loading screen audio</Description>
+    <Company>islandc_</Company>
+    <Product>LoadscreenMute</Product>
+    <Copyright>Copyright © 2022 islandc_</Copyright>
+    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>../Dependencies/Managed/Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="MelonLoader">
+      <HintPath>../Dependencies/MelonLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="UnhollowerBaseLib">
+      <HintPath>../Dependencies/Managed/UnhollowerBaseLib.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>../Dependencies/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>../Dependencies/Managed/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="VRChatUtilityKit">
+      <HintPath>../Dependencies/Mods/VRChatUtilityKit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

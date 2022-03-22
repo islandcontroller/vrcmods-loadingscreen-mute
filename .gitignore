@@ -1,0 +1,7 @@
+*.dll
+Outputs/*
+!Outputs/.keep
+LoadscreenMute/bin/
+LoadscreenMute/obj/
+Dependencies/*
+!Dependencies/.keep
