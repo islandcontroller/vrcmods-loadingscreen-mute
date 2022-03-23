@@ -1,12 +1,11 @@
 ﻿using MelonLoader;
 using UnityEngine;
-using Islandc.Melon.VRCMods;
 using VRChatUtilityKit.Utilities;
 
-[assembly: MelonInfo(typeof(LoadscreenMuteMod), "Loadscreen Mute", "1.0.0", "islandc_")]
+[assembly: MelonInfo(typeof(LoadscreenMute.LoadscreenMuteMod), "Loadscreen Mute", "1.0.0", "islandc_")]
 [assembly: MelonGame("VRChat", "VRChat")]
 
-namespace Islandc.Melon.VRCMods
+namespace LoadscreenMute
 {
   public class LoadscreenMuteMod : MelonMod
   {
